@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Practica 2</title>
     <!-- Scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
@@ -12,22 +13,32 @@
   </head>
   <body>
     <div class="container-fluid">
+      
       <div class="row">
         <div class="col-3 col-md-1">
 
         </div>
         <div class="col-6 col-md-10">
-          <form>
-            <div class="form-group">
-              <label for="txtUsuario">Direccion de correo electronico</label>
-              <input id="txtUsuario" type="email" class="form-control" placeholder="Introducir Usuario">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              Credenciales para acceder
             </div>
-            <div class="form-group">
-              <label for="txtContrasenia">Introdusca su contraseña</label>
-              <input id="txtContrasenia" type="password" class  ="form-control" placeholder="Introducir contraseña">
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <label for="txtUsuario">Direccion de correo electronico</label>
+                  <input id="txtUsuario" type="email" class="form-control" placeholder="Introducir Usuario">
+                </div>
+                <div class="form-group">
+                  <label for="txtContrasenia">Introdusca su contraseña</label>
+                  <input id="txtContrasenia" type="password" class  ="form-control" placeholder="Introducir contraseña">
+                </div>
+                <button type="button" onclick="validarUsuario()" id="btnIngresar" class="btn btn-primary">Ingresar</button>
+              </form>
             </div>
-            <button type="button" onclick="validarUsuario()" id="btnIngresar" class="btn btn-primary">Ingresar</button>
-          </form>
+          </div>
+
         </div>
         <div class="col-3 col-md-1">
 
